@@ -1,0 +1,176 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-container {
+    background: #ffffff8f;
+    padding: 2rem;
+    border-radius: 24px;
+    box-shadow: 3px 20px 45px rgba(0, 0, 0, 0.715);
+    width: 92%;
+    max-width: 520px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: dashed 4px rgba(0, 0, 0, 0.63);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: gray;
+    margin: 0;
+    font-style: italic;
+}
+header h5 {
+    color: gray;
+    margin: 0;
+    font-style: italic;
+    margin-bottom: -45px;
+    margin-left: -250px;
+}
+.score-board {
+    background: #b9db79;
+    color: #000000;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid #c7d8f4;
+}
+
+.start-screen {
+    padding: 0 0.5rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: 185px;
+    border-radius: 22px;
+    margin: 0 auto 20px;
+    position: relative;
+    background: linear-gradient(135deg, #7ea8ff 0%, #d1e3ff 100%);
+    overflow: hidden;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    inset: 15% 10%;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 14px 30px rgba(37, 80, 149, 0.12);
+}
+
+.hero-image::after {
+    content: 'LEARN';
+    position: absolute;
+    right: 16px;
+    bottom: 12px;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.6;
+}
+
+.start-screen h2 {
+    margin-bottom: 10px;
+    color: #aac96f;
+}
+
+.start-screen p {
+    color: grayp;
+    margin-bottom: 18px;
+    line-height: 1.6;
+}
+
+#player-name {
+    width: 100%;
+    max-width: 100%;
+    padding: 13px 14px;
+    border-radius: 14px;
+    border: 1px solid #cbd6ee;
+    outline: none;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    box-shadow: inset 0 1px 4px rgba(66, 90, 145, 0.08);
+}
+
+.start-btn,
+.restart-btn {
+    padding: 13px 24px;
+    background: #b9db79;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-btn:hover,
+.restart-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 25px rgba(77, 126, 247, 0.24);
+}
+
+.welcome-message {
+    font-size: 1.15rem;
+    color: #243767;
+    margin-bottom: 18px;
+}
+
+.question-area {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding: 22px;
+    background: #f7f9ff;
+    border-radius: 16px;
+    border: 1px solid #e2e8f5;
+    color: #243767;
+}
+
+.options-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.option-btn {
+    padding: 16px;
+    border: 2px solid #aac4ff;
+    background: white;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #1f3f7b;
+    transition: all 0.25s ease;
+    box-shadow: 0 8px 18px rgba(89, 118, 218, 0.08);
+}
+
+.option-btn:hover {
+    background: #ffffffce;
+    color: white;
+    transform: translateY(-2px);
+    border-color: #3f6ae5;
+}
+
+.hidden { display: none; }
+.nav-links { display: flex; list-style: none; gap: 40px;margin-bottom: -2000px;}
+.nav-links a { text-decoration: none; color: #b9db79; font-size: 0.85rem; font-weight: 600; transition: color 0.3s ease; }
